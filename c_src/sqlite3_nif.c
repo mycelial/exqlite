@@ -209,6 +209,8 @@ exqlite_open(ErlNifEnv* env, int argc, const ERL_NIF_TERM argv[])
     if (!conn) {
         return make_error_tuple(env, "out_of_memory");
     }
+    conn->db = NULL;
+    conn->mutex = NULL;
 
     if (!enif_get_int(env, argv[1], &flags)) {
         return make_error_tuple(env, "invalid flags");
