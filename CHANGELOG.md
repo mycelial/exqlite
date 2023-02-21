@@ -2,6 +2,16 @@
 
 ## Unlreleased
 
+## v0.13.3 - 2023-02-19
+- added: precompilation support. [#234](https://github.com/elixir-sqlite/exqlite/pull/234)
+
+## v0.13.2 - 2023-01-26
+- fixed: `-O2` flag was not being set when compiling binaries in non windows environment.
+
+## v0.13.1 - 2023-01-26
+- added: `SQLITE_ENABLE_DBSTAT_VTAB=1`.
+- changed: Allow `EXQLITE_SYSTEM_CFLAGS` to be appended to the `CFLAGS` regardless.
+
 ## v0.13.0 - 2023-01-11
 - removed: Remove support for Elixir 1.11
 - added: Support for custom pragmas to be set. [#229](https://github.com/elixir-sqlite/exqlite/pull/229)
